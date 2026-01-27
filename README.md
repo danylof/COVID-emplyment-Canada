@@ -183,9 +183,7 @@ Employment changes **lead** unemployment rate changes by approximately 1 month:
 │   └── test_helpers.py            # 20 tests for statistical functions
 ├── scripts/
 │   └── download_data.py           # Download dataset from Kaggle
-├── .github/workflows/test.yml     # CI/CD pipeline
 ├── requirements.txt               # Python dependencies
-├── .pre-commit-config.yaml        # Code quality hooks
 ├── LICENSE                        # MIT License
 └── README.md
 ```
@@ -248,19 +246,6 @@ Or open in VS Code with the Jupyter extension.
 ```bash
 pip install pytest
 pytest tests/ -v
-```
-
----
-
-## Development
-
-```bash
-# Install pre-commit hooks (strips notebook outputs, formats code)
-pip install pre-commit
-pre-commit install
-
-# Run hooks manually
-pre-commit run --all-files
 ```
 
 ---
